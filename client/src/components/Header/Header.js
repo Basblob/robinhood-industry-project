@@ -1,0 +1,84 @@
+import "./Header.scss";
+import logo from "../../assets/logo/rh_logo.png";
+import { Link } from "react-router-dom";
+import chevron from "../../assets/icons/chevron.right.svg";
+
+function Header() {
+  return (
+    <header className="header">
+      <div className="navbar">
+        <Link className="navbar__link" to="/">
+          <img className="navbar__logo" src={logo} alt="robinhood logo" />
+        </Link>
+        <div className="subnav">
+          <button className="subnavbtn">
+            Products <i className="fa fa-caret-down"></i>
+            <img src={chevron} className="subnav__chevron" alt="chevron" />
+          </button>
+          <div class="subnav-content">
+            <a href="https://robinhood.com/us/en/about/#our-products">
+              Stocks &amp; Funds
+            </a>
+            <a href="https://robinhood.com/us/en/about/options/">Options</a>
+            <a href="https://robinhood.com/us/en/about/gold/">Gold</a>
+            <a href="https://robinhood.com/us/en/about/cash-management/">
+              Cash Management
+            </a>
+            <a href="#|">|</a>
+            <a href="http://localhost:3000/#">Crypto</a>
+            <a href="https://robinhood.com/us/en/download/">Download</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Learn <i class="fa fa-caret-down"></i>
+            <img src={chevron} className="subnav__chevron" alt="chevron" />
+          </button>
+          <div class="subnav-content">
+            <a href="https://learn.robinhood.com/">Investing basics</a>
+            <a href="https://learn.robinhood.com/library/">Library</a>
+            <a href="https://snacks.robinhood.com/">Snacks</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button href="https://robinhood.com/us/en/support/" class="subnavbtn">
+            Support<i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">
+            Who we are <i class="fa fa-caret-down"></i>
+            <img src={chevron} className="subnav__chevron" alt="chevron" />
+          </button>
+          <div class="subnav-content">
+            <a href="https://robinhood.com/us/en/about-us/">About us</a>
+            <a href="https://robinhood.com/us/en/our-commitments/">
+              Our commitments
+            </a>
+            <a href="https://robinhood.com/us/en/our-customers/">
+              Our customers
+            </a>
+            <a href="https://press.robinhood.com/">Press</a>
+            <a href="https://blog.robinhood.com/">Blog</a>
+          </div>
+        </div>
+      </div>
+
+      <section className="header__login">
+        <a className="header__login--login" href="https://robinhood.com/login">
+          Log In
+        </a>
+        <a
+          className="header__login--signup"
+          href="https://robinhood.com/signup"
+        >
+          Sign Up
+        </a>
+      </section>
+    </header>
+  );
+}
+
+export default Header;
