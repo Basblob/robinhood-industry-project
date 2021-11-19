@@ -128,16 +128,34 @@
 
 .hide-me {
   display: none;
-  .connector {
-    margin-left: 29.5rem;
-    margin-top: -95px;
-    z-index: 999;
+}
+.connector {
+  margin-left: 29.5rem;
+  margin-top: -95px;
+  z-index: 999;
 
-    &-b {
-      margin-right: 29.5rem;
-      position: absolute;
-      right: -0.05rem;
-      top: 8.5rem;
-    }
+  &-b {
+    margin-right: 29.5rem;
+    position: absolute;
+    right: -0.05rem;
+    top: 8.5rem;
   }
+}
+
+.ql {
+  padding-right: 35px;
+}
+
+.qr {
+  padding-left: 35px;
+}
+
+.al {
+  width: 440px;
+  padding-right: 50px;
+}
+
+.ar {
+  width: 440px;
+  padding-left: 60px;
 }

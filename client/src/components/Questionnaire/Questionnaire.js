@@ -65,10 +65,10 @@ export default class Question extends React.Component {
       <section className="question">
         <figure id="one" className="learn right">
           <div className="learn__blurb">
-            <p className="learn__blurb__text ques">
+            <p className="learn__blurb__text ques ql">
               Is it legal for me to purchase cryptocurrency in the U.S.?
             </p>
-            <p className="learn__blurb__text ans">
+            <p className="learn__blurb__text ans al">
               Yes. In 2013, the U.S. Treasury Department’s Financial Crimes
               Enforcement Network (FINCEN) stated that it is legal to invest in
               Bitcoin and use it as a form of payment as long as the seller is
@@ -96,20 +96,19 @@ export default class Question extends React.Component {
             </button>
           </div>
 
-          <img className="connector" src={line} />
+          <img className="connector" src={line} alt="line" />
         </figure>
         {/* ------------------------------------- */}
         <figure id="two" className="learn left">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">
-              Do I need to be super-rich to invest in cryptocurrencies?{" "}
+            <p className="learn__blurb__text ques qr">
+              Do I need to be super-rich to invest in cryptocurrencies?
             </p>
-            <p className="learn__blurb__text ans">
+            <p className="learn__blurb__text ans ar">
               Not at all. We’ll let you in on a secret, the super-rich Bitcoin
               investors of today actually started out by buying small amounts of
               Bitcoin and accumulating during the bear market!
             </p>
-            <p className="learn__blurb__text-p">Are Bitcoin and other "Crypto-Coins" real money?</p>
             <img className="hexagon--right" src={hexa2} alt="hexagon" />
           </div>
 
@@ -131,22 +130,21 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
-          <img className="connector-b" src={line} />
+          <img className="connector-b" src={line} alt="line" />
         </figure>
 
         {/* ------------------------------------- */}
         <figure id="three" className="learn right">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">
-              Are blockchain and cryptocurrencies the same ?{" "}
+            <p className="learn__blurb__text ques ql">
+              Are blockchain and cryptocurrencies the same ?
             </p>
-            <p className="learn__blurb__text ans">
+            <p className="learn__blurb__text ans al">
               No. Blockchain is the technology that allows for cryptocurrencies
               to work. It is important to separate the technology behind
               cryptocurrencies from the actual cryptocurrencies.
             </p>
 
-            <p className="learn__blurb__text-pl">Is the blockchain the same thing as Cryptocurrency?</p>
             <img className="hexagon--left" src={hexa3} alt="hexagon" />
           </div>
 
@@ -168,13 +166,15 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
-          <img className="connector" src={line} />
+          <img className="connector" src={line} alt="line" />
         </figure>
         {/* ------------------------------------- */}
         <figure id="four" className="learn left">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">Is cryptocurrency taxable?</p>
-            <p className="learn__blurb__text ans">
+            <p className="learn__blurb__text ques qr">
+              Is cryptocurrency taxable?
+            </p>
+            <p className="learn__blurb__text ans ar">
               Yes. But if all you do with crypto this year is use U.S. dollars
               to purchase crypto and then keep it in an exchange or your
               personal crypto wallet, you won’t owe taxes on it.
@@ -200,20 +200,19 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
-          <img className="connector-b" src={line} />
+          <img className="connector-b" src={line} alt="line" />
         </figure>
         {/* ------------------------------------- */}
         <figure id="five" className="learn right">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">
+            <p className="learn__blurb__text ques ql">
               Can we trade cryptocurrencies 24/7 ?
             </p>
-            <p className="learn__blurb__text ans">
+            <p className="learn__blurb__text ans al">
               Yes, on many exchanges you can place an order at 11 a.m. Sunday or
               any other day and time. Many cryptocurrencies trade 24 hours a
               day, seven days a week.
             </p>
-            <p className="learn__blurb__text-pl">Is the blockchain the same thing as Cryptocurrency?</p>
             <img className="hexagon--left" src={hexa5} alt="hexagon" />
           </div>
           {/* ------------------------------------- */}
@@ -238,7 +237,9 @@ export default class Question extends React.Component {
           </div>
         </figure>
         <button className="invest-today">Invest Today.</button>
-        <p className="not-sure">Still not sure? Take a look at more info below.</p>
+        <p className="not-sure">
+          Still not sure? Take a look at more info below.
+        </p>
       </section>
     );
   }
