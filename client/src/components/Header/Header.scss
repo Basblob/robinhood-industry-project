@@ -1,0 +1,104 @@
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar__logo {
+  height: 2rem;
+  width: 8.875rem;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(29, 27, 27);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: white;
+  color: #ff5a87;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: white;
+  color: #ff5a87;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+  padding-left: 10.75rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #e5e5e5;
+  box-shadow: 2px 3px 4px #e5e5e5;
+
+  &__login {
+    padding: 0 1rem;
+
+    &--login {
+      padding: 1rem 2.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    &--signup {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      background-color: #ff5a87;
+      border-radius: 30px;
+      min-width: 153px;
+      height: auto;
+      padding: 1rem 2.5rem;
+    }
+  }
+  .subnav__chevron {
+    height: 10px;
+    width: 20px;
+    padding: 0 8px;
+  }
+}
