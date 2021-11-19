@@ -10,6 +10,8 @@ import coin2 from "../../assets/GreenCoin_2.svg";
 import coin3 from "../../assets/GreenCoin_3.svg";
 
 export default class Question extends React.Component {
+  state = {};
+
   render() {
     return (
       <section className="question">
