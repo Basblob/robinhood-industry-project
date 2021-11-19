@@ -1,13 +1,10 @@
 import "./Questionnaire.scss";
 import React from "react";
-import hexa1 from "../../assets/hexa-1.svg";
-import hexa2 from "../../assets/hexa-2.svg";
-import hexa3 from "../../assets/hexa-3.svg";
-import hexa4 from "../../assets/hexa-4.svg";
-import hexa5 from "../../assets/hexa-5.svg";
-import coin1 from "../../assets/GreenCoin_1.svg";
-import coin2 from "../../assets/GreenCoin_2.svg";
-import coin3 from "../../assets/GreenCoin_3.svg";
+import hexa1 from "../../Assets/hexa-1.svg";
+import hexa2 from "../../Assets/hexa-2.svg";
+import hexa3 from "../../Assets/hexa-3.svg";
+import hexa4 from "../../Assets/hexa-4.svg";
+import hexa5 from "../../Assets/hexa-5.svg";
 
 export default class Question extends React.Component {
   state = {};
@@ -84,9 +81,6 @@ export default class Question extends React.Component {
         <p className="not-sure">
           Still not sure? Take a look at more info below.
         </p>
-        <img className="coin1" src={coin1} alt="crypto coin" />
-        <img className="coin2" src={coin2} alt="ethereum coin" />
-        <img className="coin3" src={coin3} alt="bitcoin" />
       </section>
     );
   }

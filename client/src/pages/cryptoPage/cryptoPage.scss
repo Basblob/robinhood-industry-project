@@ -1,0 +1,21 @@
+.crypto {
+  background: rgba(250, 249, 248, 1);
+  position: relative;
+  .coin1,
+  .coin2,
+  .coin3 {
+    position: absolute;
+  }
+  .coin1 {
+    right: 0;
+    top: 515px;
+  }
+  .coin2 {
+    left: 0;
+    top: 1185px;
+  }
+  .coin3 {
+    right: 100px;
+    bottom: 1610px;
+  }
+}
