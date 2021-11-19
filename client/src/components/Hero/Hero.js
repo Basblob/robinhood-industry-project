@@ -7,7 +7,7 @@ function Hero() {
     <main className="hero">
       <section className="hero__left">
         <div className="hero__text">
-          <h1 className="hero__h1">Money. Redifined.</h1>
+          <h1 className="hero__h1">Money. Redefined.</h1>
           <p className="hero__p">
             Robinhood believes in monetary freedom for everyone.
           </p>
