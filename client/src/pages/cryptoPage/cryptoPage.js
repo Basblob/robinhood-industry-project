@@ -1,6 +1,6 @@
 import { React, Component } from "react";
 import "./cryptoPage.scss";
-import Question from "../../components/Question/Question";
+import Questionnaire from "../../components/Questionnaire/Questionnaire";
 
 export default class cryptoPage extends Component {
   state = {};
@@ -8,7 +8,7 @@ export default class cryptoPage extends Component {
   render() {
     return (
       <article className="crypto">
-        <Question />
+        <Questionnaire />
       </article>
     );
   }

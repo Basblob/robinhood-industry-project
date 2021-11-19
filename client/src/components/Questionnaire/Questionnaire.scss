@@ -1,0 +1,123 @@
+.learn {
+  z-index: 999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  // margin-top: 140px;
+  &__blurb {
+    display: flex;
+    box-sizing: border-box;
+    width: 522px;
+    height: 104px;
+    margin: 0;
+    border: 3px solid #251128;
+    background: rgba(37, 17, 40, 0.15);
+    border-radius: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    &__text {
+    }
+
+    .hexagon--right,
+    .hexagon--left {
+      position: absolute;
+      width: 140px;
+      height: 120px;
+    }
+    .hexagon--left {
+      right: -74px;
+      top: -40px;
+    }
+    .hexagon--right {
+      left: -74px;
+      bottom: -40px;
+    }
+  }
+}
+.question {
+  background: rgba(250, 249, 248, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  .left {
+    margin-top: 40px;
+    align-self: flex-end;
+    margin-right: 194px;
+    .learn__answer {
+      align-self: flex-end;
+    }
+  }
+  .right {
+    margin-top: 140px;
+    align-self: flex-start;
+    margin-left: 194px;
+  }
+  .coin1,
+  .coin2,
+  .coin3 {
+    position: absolute;
+  }
+  .coin1 {
+    right: 0;
+    top: -120px;
+  }
+  .coin2 {
+    left: 0;
+    top: 560px;
+  }
+  .coin3 {
+    right: 100px;
+    bottom: -115px;
+  }
+  .invest-today {
+    border-style: none;
+    width: 570px;
+    height: 60px;
+    background-color: #ff5a87;
+    border-radius: 50px;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-top: 66px;
+    z-index: 999;
+    &:hover {
+      background-color: #c43b60;
+    }
+  }
+  .not-sure {
+    align-self: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 38px;
+  }
+}
+
+.learn__answer {
+  margin-top: 20px;
+  .learn__answer--left,
+  .learn__answer--right {
+    min-width: 100px;
+    min-height: 50px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ff5a87;
+    // color: rgba(250, 249, 248, 1);
+    &:hover {
+      background-color: #c43b60;
+    }
+  }
+  .learn__answer--left {
+    margin-right: 48px;
+  }
+}
