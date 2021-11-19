@@ -5,6 +5,7 @@ import hexa2 from "../../Assets/hexa-2.svg";
 import hexa3 from "../../Assets/hexa-3.svg";
 import hexa4 from "../../Assets/hexa-4.svg";
 import hexa5 from "../../Assets/hexa-5.svg";
+import line from "../../Assets/Rectangle 63.svg";
 
 export default class Question extends React.Component {
   state = {};
@@ -22,13 +23,13 @@ export default class Question extends React.Component {
             <button className="learn__answer--left">True</button>
             <button className="learn__answer--right">False</button>
           </div>
+
+          <img className="connector" src={line} />
         </figure>
         {/* ------------------------------------- */}
         <figure className="learn left">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">
-              Are Bitcoin and other "Crypto-Coins" real money?
-            </p>
+            <p className="learn__blurb__text-p">Are Bitcoin and other "Crypto-Coins" real money?</p>
             <img className="hexagon--right" src={hexa2} alt="hexagon" />
           </div>
 
@@ -36,13 +37,13 @@ export default class Question extends React.Component {
             <button className="learn__answer--left">True</button>
             <button className="learn__answer--right">False</button>
           </div>
+          <img className="connector-b" src={line} />
         </figure>
+
         {/* ------------------------------------- */}
         <figure className="learn right">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">
-              Is the blockchain the same thing as Cryptocurrency?
-            </p>
+            <p className="learn__blurb__text-pl">Is the blockchain the same thing as Cryptocurrency?</p>
             <img className="hexagon--left" src={hexa3} alt="hexagon" />
           </div>
 
@@ -50,6 +51,7 @@ export default class Question extends React.Component {
             <button className="learn__answer--left">True</button>
             <button className="learn__answer--right">False</button>
           </div>
+          <img className="connector" src={line} />
         </figure>
         {/* ------------------------------------- */}
         <figure className="learn left">
@@ -62,13 +64,12 @@ export default class Question extends React.Component {
             <button className="learn__answer--left">True</button>
             <button className="learn__answer--right">False</button>
           </div>
+          <img className="connector-b" src={line} />
         </figure>
         {/* ------------------------------------- */}
         <figure className="learn right">
           <div className="learn__blurb">
-            <p className="learn__blurb__text">
-              Is the blockchain the same thing as Cryptocurrency?
-            </p>
+            <p className="learn__blurb__text-pl">Is the blockchain the same thing as Cryptocurrency?</p>
             <img className="hexagon--left" src={hexa5} alt="hexagon" />
           </div>
 
@@ -78,9 +79,7 @@ export default class Question extends React.Component {
           </div>
         </figure>
         <button className="invest-today">Invest Today.</button>
-        <p className="not-sure">
-          Still not sure? Take a look at more info below.
-        </p>
+        <p className="not-sure">Still not sure? Take a look at more info below.</p>
       </section>
     );
   }
