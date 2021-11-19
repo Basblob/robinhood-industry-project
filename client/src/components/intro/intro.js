@@ -31,7 +31,7 @@ export default function InfoCard() {
       </section>
 
       <section className="grey">
-        <h2 className="title">Learn The Basics of Crypto</h2>
+        <h2 className="title">Learn the basics with CRYPTO 101</h2>
         <p className="title__subtext">Lets see what you know!</p>
       </section>
     </article>
