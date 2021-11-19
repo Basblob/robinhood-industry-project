@@ -1,17 +1,51 @@
 .learn {
-  &__question {
-    display: flex;
-    &__blurb {
-      width: 500px;
-      height: 90px;
-      margin: 0;
-      margin-right: -20px;
-      background-color: grey;
-    }
-    &__hexagon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  &__blurb {
+    width: 522px;
+    height: 104px;
+    margin: 0;
+    border: grey solid 7px;
+    border-radius: 20px;
+    position: relative;
+
+    .hexagon--right,
+    .hexagon--left {
+      position: absolute;
       width: 140px;
       height: 120px;
-      background-color: white;
     }
+    .hexagon--left {
+      right: -70px;
+      top: -40px;
+    }
+    .hexagon--right {
+      left: -70px;
+      top: -40px;
+    }
+  }
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  .left {
+    align-self: flex-end;
+    margin-right: 194px;
+    .learn__answer {
+      align-self: flex-end;
+    }
+  }
+  .right {
+    align-self: flex-start;
+    margin-left: 194px;
+  }
+}
+
+.learn__answer {
+  .learn__answer--left {
+    
+  }
+  .learn__answer--right {
   }
 }
