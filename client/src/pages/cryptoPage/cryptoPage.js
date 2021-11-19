@@ -1,5 +1,7 @@
 import { React, Component } from "react";
 import "./cryptoPage.scss";
+import Hero from "../../components/Hero/Hero";
+import Header from "../../components/Header/Header";
 import Questionnaire from "../../components/Questionnaire/Questionnaire";
 import Intro from "../../components/intro/intro";
 import CardInfo from "../../components/cardInfo/cardInfo";
@@ -14,6 +16,8 @@ export default class cryptoPage extends Component {
   render() {
     return (
       <article className="crypto">
+        <Header />
+        <Hero />
         <Intro />
         <Questionnaire />
         <CardInfo />
