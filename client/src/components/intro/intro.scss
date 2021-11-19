@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.whyRH {
+  background-color: #251128;
+
+  &__header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    padding-top: 3rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+
+  &__column {
+    text-align: center;
+    flex-direction: column;
+    margin: 0 2rem;
+
+    &--text {
+      max-width: 17rem;
+      color: #ffffff;
+      font-size: 1.125rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.grey {
+  height: 10rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.625rem;
+  margin-top: 3rem;
+
+  &__subtext {
+    font-size: 3rem;
+    text-align: center;
+  }
+}

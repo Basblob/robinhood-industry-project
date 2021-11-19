@@ -1,0 +1,31 @@
+.protection {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.pink-list {
+  background-color: #ff5a87;
+  padding-bottom: 4rem;
+
+  &__title {
+    font-size: 3.5rem;
+    max-width: 42rem;
+    padding: 2rem;
+
+    &--list {
+      font-family: 1.5rem;
+      line-height: 3.125rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.extension {
+  background-color: #120c1d;
+  width: 50%;
+
+  &__img {
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
+}
