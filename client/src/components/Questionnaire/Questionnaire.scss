@@ -19,6 +19,14 @@
     justify-content: center;
     align-items: center;
 
+    &__text-p {
+      padding-left: 30px;
+
+      &l {
+        padding-right: 40px;
+      }
+    }
+
     .hexagon--right,
     .hexagon--left {
       position: absolute;
@@ -42,9 +50,10 @@
   position: relative;
   overflow: hidden;
   .left {
-    margin-top: 40px;
+    // margin-top: 40px;
+    margin-top: -50px;
     align-self: flex-end;
-    margin-right: 194px;
+    margin-right: 203px;
     .learn__answer {
       align-self: flex-end;
     }
@@ -119,4 +128,16 @@
 
 .hide-me {
   display: none;
+  .connector {
+    margin-left: 29.5rem;
+    margin-top: -95px;
+    z-index: 999;
+
+    &-b {
+      margin-right: 29.5rem;
+      position: absolute;
+      right: -0.05rem;
+      top: 8.5rem;
+    }
+  }
 }

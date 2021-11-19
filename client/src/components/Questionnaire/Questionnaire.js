@@ -7,6 +7,7 @@ import hexa4 from "../../Assets/hexa-4.svg";
 import hexa5 from "../../Assets/hexa-5.svg";
 import hexaCorrect from "../../Assets/hexa-correct.svg";
 import hexaWrong from "../../Assets/hexa-wrong.svg";
+import line from "../../Assets/Rectangle 63.svg";
 
 export default class Question extends React.Component {
   state = {};
@@ -94,6 +95,8 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
+
+          <img className="connector" src={line} />
         </figure>
         {/* ------------------------------------- */}
         <figure id="two" className="learn left">
@@ -106,6 +109,7 @@ export default class Question extends React.Component {
               investors of today actually started out by buying small amounts of
               Bitcoin and accumulating during the bear market!
             </p>
+            <p className="learn__blurb__text-p">Are Bitcoin and other "Crypto-Coins" real money?</p>
             <img className="hexagon--right" src={hexa2} alt="hexagon" />
           </div>
 
@@ -127,7 +131,9 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
+          <img className="connector-b" src={line} />
         </figure>
+
         {/* ------------------------------------- */}
         <figure id="three" className="learn right">
           <div className="learn__blurb">
@@ -140,6 +146,7 @@ export default class Question extends React.Component {
               cryptocurrencies from the actual cryptocurrencies.
             </p>
 
+            <p className="learn__blurb__text-pl">Is the blockchain the same thing as Cryptocurrency?</p>
             <img className="hexagon--left" src={hexa3} alt="hexagon" />
           </div>
 
@@ -161,6 +168,7 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
+          <img className="connector" src={line} />
         </figure>
         {/* ------------------------------------- */}
         <figure id="four" className="learn left">
@@ -192,6 +200,7 @@ export default class Question extends React.Component {
               No
             </button>
           </div>
+          <img className="connector-b" src={line} />
         </figure>
         {/* ------------------------------------- */}
         <figure id="five" className="learn right">
@@ -204,6 +213,7 @@ export default class Question extends React.Component {
               any other day and time. Many cryptocurrencies trade 24 hours a
               day, seven days a week.
             </p>
+            <p className="learn__blurb__text-pl">Is the blockchain the same thing as Cryptocurrency?</p>
             <img className="hexagon--left" src={hexa5} alt="hexagon" />
           </div>
           {/* ------------------------------------- */}
@@ -228,9 +238,7 @@ export default class Question extends React.Component {
           </div>
         </figure>
         <button className="invest-today">Invest Today.</button>
-        <p className="not-sure">
-          Still not sure? Take a look at more info below.
-        </p>
+        <p className="not-sure">Still not sure? Take a look at more info below.</p>
       </section>
     );
   }
