@@ -1,13 +1,14 @@
-import { React, Component, Link } from "react";
+import { React, Component } from "react";
 import "./cryptoPage.scss";
+import Question from "../../components/Question/Question";
 
 export default class cryptoPage extends Component {
   state = {};
 
   render() {
     return (
-      <article>
-        <header></header>
+      <article className="crypto">
+        <Question />
       </article>
     );
   }

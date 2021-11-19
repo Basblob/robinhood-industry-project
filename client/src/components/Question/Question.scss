@@ -1,0 +1,17 @@
+.learn {
+  &__question {
+    display: flex;
+    &__blurb {
+      width: 500px;
+      height: 90px;
+      margin: 0;
+      margin-right: -20px;
+      background-color: grey;
+    }
+    &__hexagon {
+      width: 140px;
+      height: 120px;
+      background-color: white;
+    }
+  }
+}
