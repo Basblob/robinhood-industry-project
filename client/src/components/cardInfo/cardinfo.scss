@@ -4,9 +4,13 @@
   padding-top: 5rem;
   justify-content: center;
   z-index: 999;
+  padding-bottom: 30px;
 }
 
 .card {
+  &:hover {
+    border: solid 4px black;
+  }
   z-index: 999;
   box-sizing: border-box;
   background: #faf9f8;
@@ -19,7 +23,8 @@
   height: 370px;
   display: flex;
   flex-direction: column;
-
+  color: black;
+  text-decoration: none;
   &__title {
     font-family: Arial;
     font-style: normal;
@@ -27,6 +32,7 @@
     font-size: 36px;
     line-height: 41px;
     padding-left: 12px;
+    text-decoration: none;
   }
   &__text {
     font-family: Arial;
@@ -36,6 +42,7 @@
     line-height: 21px;
     padding-left: 12px;
     padding-top: 16px;
+    text-decoration: none;
   }
   &__image {
     align-self: right;
@@ -44,4 +51,9 @@
 
 .background {
   background: rgba(250, 249, 248, 1);
+  overflow: hidden;
+}
+
+.linky {
+  text-decoration: none;
 }

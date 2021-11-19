@@ -236,7 +236,9 @@ export default class Question extends React.Component {
             </button>
           </div>
         </figure>
-        <button className="invest-today">Invest Today.</button>
+        <a className="linky" href="https://robinhood.com/signup">
+          <button className="invest-today">Invest Today.</button>
+        </a>
         <p className="not-sure">
           Still not sure? Take a look at more info below.
         </p>
