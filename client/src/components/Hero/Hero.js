@@ -14,12 +14,15 @@ function Hero() {
           <p className="hero__p">That includes you.</p>
         </div>
         <div className="hero__buttons">
-          <a href="https://robinhood.com/signup" className="hero__bttn">
+          <button href="https://robinhood.com/signup" className="hero__bttn">
             Get Started
-          </a>
-          <a href="https://learn.robinhood.com/library/" className="hero__bttn">
+          </button>
+          <button
+            href="https://learn.robinhood.com/library/"
+            className="hero__bttn"
+          >
             Learn More
-          </a>
+          </button>
         </div>
         <div className="hero__disclosure">
           <img className="hero__discicon" src={disicon} alt="disclosure icon" />

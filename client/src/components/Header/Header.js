@@ -73,12 +73,12 @@ function Header() {
         <a className="header__login--login" href="https://robinhood.com/login">
           Log In
         </a>
-        <a
+        <button
           className="header__login--signup"
           href="https://robinhood.com/signup"
         >
           Sign Up
-        </a>
+        </button>
       </section>
     </header>
   );
