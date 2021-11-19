@@ -11,10 +11,58 @@ import hexaWrong from "../../Assets/hexa-wrong.svg";
 export default class Question extends React.Component {
   state = {};
 
+  handleCorrectAnswer = (e) => {
+    let buttons = e.target.parentNode.children;
+    let button = {};
+    let otherButton = {};
+
+    if (buttons[0] === e.target) {
+      button = buttons[0];
+      otherButton = buttons[1];
+    } else {
+      otherButton = buttons[0];
+      button = buttons[1];
+    }
+    const rectangle = e.target.parentNode.parentNode.children[0];
+    const query = rectangle.children[0];
+    const response = rectangle.children[1];
+    const hexa = rectangle.children[2];
+    button.classList.add("active-button");
+    rectangle.classList.add("turns-purple");
+    hexa.src = hexaCorrect;
+    query.className = "hide-me";
+    response.classList.add("show-me");
+  };
+  handleWrongAnswer = (e) => {
+    let buttons = e.target.parentNode.children;
+    let button = {};
+    let otherButton = {};
+
+    if (buttons[0] === e.target) {
+      button = buttons[0];
+      otherButton = buttons[1];
+    } else {
+      button = buttons[1];
+      otherButton = buttons[0];
+    }
+    const rectangle = e.target.parentNode.parentNode.children[0];
+    const query = rectangle.children[0];
+    const response = rectangle.children[1];
+    const hexa = rectangle.children[2];
+    button.classList.add("active-button");
+    if (otherButton.classList.contains("active-button")) {
+      otherButton.classList.remove("active-button");
+    }
+    rectangle.classList.add("turns-purple");
+    hexa.src = hexaWrong;
+    query.className = "hide-me";
+    response.classList.add("show-me");
+  };
+
   render() {
     return (
       <section className="question">
-        <figure className="learn right one">
+        <figure id="one" className="learn right">
           <div className="learn__blurb">
             <p className="learn__blurb__text ques">
               Is it legal for me to purchase cryptocurrency in the U.S.?
@@ -29,12 +77,26 @@ export default class Question extends React.Component {
           </div>
 
           <div className="learn__answer">
-            <button className="learn__answer--left">Yes</button>
-            <button className="learn__answer--right">No</button>
+            <button
+              className="learn__answer--left"
+              onClick={(e) => {
+                this.handleCorrectAnswer(e);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              className="learn__answer--right"
+              onClick={(e) => {
+                this.handleWrongAnswer(e);
+              }}
+            >
+              No
+            </button>
           </div>
         </figure>
         {/* ------------------------------------- */}
-        <figure className="learn left two">
+        <figure id="two" className="learn left">
           <div className="learn__blurb">
             <p className="learn__blurb__text">
               Do I need to be super-rich to invest in cryptocurrencies?{" "}
@@ -48,12 +110,26 @@ export default class Question extends React.Component {
           </div>
 
           <div className="learn__answer">
-            <button className="learn__answer--left">Yes</button>
-            <button className="learn__answer--right">No</button>
+            <button
+              className="learn__answer--left"
+              onClick={(e) => {
+                this.handleWrongAnswer(e);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              className="learn__answer--right"
+              onClick={(e) => {
+                this.handleCorrectAnswer(e);
+              }}
+            >
+              No
+            </button>
           </div>
         </figure>
         {/* ------------------------------------- */}
-        <figure className="learn right three">
+        <figure id="three" className="learn right">
           <div className="learn__blurb">
             <p className="learn__blurb__text">
               Are blockchain and cryptocurrencies the same ?{" "}
@@ -68,12 +144,26 @@ export default class Question extends React.Component {
           </div>
 
           <div className="learn__answer">
-            <button className="learn__answer--left">Yes</button>
-            <button className="learn__answer--right">No</button>
+            <button
+              className="learn__answer--left"
+              onClick={(e) => {
+                this.handleWrongAnswer(e);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              className="learn__answer--right"
+              onClick={(e) => {
+                this.handleCorrectAnswer(e);
+              }}
+            >
+              No
+            </button>
           </div>
         </figure>
         {/* ------------------------------------- */}
-        <figure className="learn left four">
+        <figure id="four" className="learn left">
           <div className="learn__blurb">
             <p className="learn__blurb__text">Is cryptocurrency taxable?</p>
             <p className="learn__blurb__text ans">
@@ -85,12 +175,26 @@ export default class Question extends React.Component {
           </div>
 
           <div className="learn__answer">
-            <button className="learn__answer--left">Yes</button>
-            <button className="learn__answer--right">No</button>
+            <button
+              className="learn__answer--left"
+              onClick={(e) => {
+                this.handleCorrectAnswer(e);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              className="learn__answer--right"
+              onClick={(e) => {
+                this.handleWrongAnswer(e);
+              }}
+            >
+              No
+            </button>
           </div>
         </figure>
         {/* ------------------------------------- */}
-        <figure className="learn right five">
+        <figure id="five" className="learn right">
           <div className="learn__blurb">
             <p className="learn__blurb__text">
               Can we trade cryptocurrencies 24/7 ?
@@ -105,8 +209,22 @@ export default class Question extends React.Component {
           {/* ------------------------------------- */}
           {/* ------------------------------------- */}
           <div className="learn__answer">
-            <button className="learn__answer--left">Yes</button>
-            <button className="learn__answer--right">No</button>
+            <button
+              className="learn__answer--left"
+              onClick={(e) => {
+                this.handleCorrectAnswer(e);
+              }}
+            >
+              Yes
+            </button>
+            <button
+              className="learn__answer--right"
+              onClick={(e) => {
+                this.handleWrongAnswer(e);
+              }}
+            >
+              No
+            </button>
           </div>
         </figure>
         <button className="invest-today">Invest Today.</button>
